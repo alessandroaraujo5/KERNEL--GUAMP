@@ -33,7 +33,7 @@ function KERNEL_COMPILE() {
 	git restore drivers/Makefile drivers/Kconfig
 
 	# Setup for KernelSU
-	curl -LSs "https://raw.githubusercontent.com/kylieeXD/SukiSU-Ultra/main/kernel/setup.sh" | bash -s tmp-builtin
+	curl -LSs "https://raw.githubusercontent.com/rsuntk/KernelSU/main/kernel/setup.sh" | bash -s main
 
 	# Download clang if not present
 	if [[ ! -d clang ]]; then mkdir -p clang
